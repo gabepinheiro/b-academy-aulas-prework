@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div data-js="app" class="app">
+    <form action="" data-js="form">
+      <label for="username">Nome: </label>
+      <input type="text" id="username" data-js="username">
+
+      <br />
+
+      <label for="email">Email: </label>
+      <input type="email" id="email" data-js="email">
+
+      <br />
+
+      <label for="password">Senha: </label>
+      <input type="password" id="password" data-js="password">
+
+      <br />
+
+      <label for="textarea">Textarea:</label>
+      <textarea data-js="text" name="" id="textarea" cols="30" rows="10">
+      </textarea>
+
+      <br />
+      <label>
+        <input type="checkbox" name="lang" value="js" data-js="lang">
+        JS
+      </label>
+
+      <label>
+        <input type="checkbox" name="lang" value="ts" data-js="lang">
+        TS
+      </label>
+
+      <label>
+        <input type="checkbox" name="lang" value="java" data-js="lang">
+        Java
+      </label>
+
+      <label>
+        <input type="radio" name="gender" value="m" data-js="gender">
+        Masculino
+      </label>
+      <label>
+        <input type="radio" name="gender" value="f" data-js="gender">
+        Feminino
+      </label>
+      <label>
+        <input type="radio" name="gender" value="x" data-js="gender">
+        Prefiro não dizer
+      </label>
+
+      <br />
+      <select name="lang-select" data-js="lang-select">
+        <option value="js">JS</option>
+        <option value="ts">TS</option>
+        <option value="java">Java</option>
+      </select>
+
+      <br />
+      <select name="gender-select" data-js="gender-select">
+        <option value="f">Feminino</option>
+        <option value="m">Masculino</option>
+        <option value="x">Prefiro não dizer</option>
+      </select>
+      <button type="submit" data-js="btn-submit">Enviar</button>
+    </form>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
